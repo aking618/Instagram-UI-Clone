@@ -11,6 +11,9 @@
 		EDDD94082A5CD30E004D14FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94072A5CD30E004D14FB /* ContentView.swift */; };
 		EDDD940A2A5CD30F004D14FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDD94092A5CD30F004D14FB /* Assets.xcassets */; };
 		EDDD940D2A5CD30F004D14FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDD940C2A5CD30F004D14FB /* Preview Assets.xcassets */; };
+		EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94162A5CDD5F004D14FB /* Home.swift */; };
+		EDDD941A2A5CDD73004D14FB /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94192A5CDD73004D14FB /* Feed.swift */; };
+		EDDD941C2A5CDD7C004D14FB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD941B2A5CDD7C004D14FB /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		EDDD94072A5CD30E004D14FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDDD94092A5CD30F004D14FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDDD940C2A5CD30F004D14FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDDD94162A5CDD5F004D14FB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EDDD94192A5CDD73004D14FB /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		EDDD941B2A5CDD7C004D14FB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		EDDD94042A5CD30E004D14FB /* InstagramUIClone */ = {
 			isa = PBXGroup;
 			children = (
+				EDDD94152A5CDD43004D14FB /* Models */,
+				EDDD94142A5CDD3E004D14FB /* ViewModels */,
+				EDDD94132A5CDD3A004D14FB /* Views */,
 				EDDD94052A5CD30E004D14FB /* InstagramUICloneApp.swift */,
 				EDDD94072A5CD30E004D14FB /* ContentView.swift */,
 				EDDD94092A5CD30F004D14FB /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				EDDD940C2A5CD30F004D14FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDDD94132A5CDD3A004D14FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDDD94162A5CDD5F004D14FB /* Home.swift */,
+				EDDD94192A5CDD73004D14FB /* Feed.swift */,
+				EDDD941B2A5CDD7C004D14FB /* Login.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDDD94142A5CDD3E004D14FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDDD94152A5CDD43004D14FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDDD94082A5CD30E004D14FB /* ContentView.swift in Sources */,
+				EDDD941C2A5CDD7C004D14FB /* Login.swift in Sources */,
+				EDDD941A2A5CDD73004D14FB /* Feed.swift in Sources */,
+				EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */,
 				EDDD94062A5CD30E004D14FB /* InstagramUICloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
