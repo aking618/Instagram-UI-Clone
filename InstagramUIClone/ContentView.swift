@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var appContext = AppContextViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack(path: $appContext.path) {
+            Login()
+                .navigationDestination(for: Route.self) { route in
+                    switch route {
+                    case .home:
+                        Home()
+                    }
+                }
         }
-        .padding()
+        .environmentObject(appContext)
     }
 }
 

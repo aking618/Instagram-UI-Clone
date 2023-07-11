@@ -14,6 +14,7 @@
 		EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94162A5CDD5F004D14FB /* Home.swift */; };
 		EDDD941A2A5CDD73004D14FB /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94192A5CDD73004D14FB /* Feed.swift */; };
 		EDDD941C2A5CDD7C004D14FB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD941B2A5CDD7C004D14FB /* Login.swift */; };
+		EDDD941E2A5CE00D004D14FB /* AppContextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD941D2A5CE00D004D14FB /* AppContextViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		EDDD94162A5CDD5F004D14FB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		EDDD94192A5CDD73004D14FB /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		EDDD941B2A5CDD7C004D14FB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		EDDD941D2A5CE00D004D14FB /* AppContextViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContextViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		EDDD94142A5CDD3E004D14FB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EDDD941D2A5CE00D004D14FB /* AppContextViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				EDDD941C2A5CDD7C004D14FB /* Login.swift in Sources */,
 				EDDD941A2A5CDD73004D14FB /* Feed.swift in Sources */,
 				EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */,
+				EDDD941E2A5CE00D004D14FB /* AppContextViewModel.swift in Sources */,
 				EDDD94062A5CD30E004D14FB /* InstagramUICloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
