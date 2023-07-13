@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Login: View {
-    @EnvironmentObject var appContext: AppContextViewModel
+    @EnvironmentObject var appContext: AppState
     
     @State private var username: String = ""
     @State private var password: String = ""

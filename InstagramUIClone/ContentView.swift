@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var appContext = AppContextViewModel()
+    @StateObject var appContext = AppState()
     
     var body: some View {
         NavigationStack(path: $appContext.path) {
