@@ -31,9 +31,18 @@ struct PostView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 400)
+                .onTapGesture(count: 2) {
+                    withAnimation {
+                        post.isLiked.toggle()
+                    }
+                }
             
             HStack {
-                Button(action: {}, label: { Image(systemName: "heart") })
+                Button{
+                    post.isLiked.toggle()
+                } label: {
+                    Image(systemName: post.isLiked ? "heart.fill" : "heart")
+                }
                 Button(action: {}, label: { Image(systemName: "message") })
                 Button(action: {}, label: { Image(systemName: "paperplane") })
                 Spacer()
