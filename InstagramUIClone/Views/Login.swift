@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Login: View {
-    @EnvironmentObject var appContext: AppContextViewModel
+    @EnvironmentObject var appState: AppState
     
     @State private var username: String = ""
     @State private var password: String = ""
@@ -38,7 +38,7 @@ struct Login: View {
                 print(username, password)
                 
                 // navigate to home
-                appContext.navigate(route: Route.home)
+                appState.loggedIn = true
                 
             } label: {
                 Text("Log in")

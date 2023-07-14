@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var appContext = AppContextViewModel()
+    @StateObject var appState = AppState()
     
     var body: some View {
-        NavigationStack(path: $appContext.path) {
+        if appState.loggedIn {
+            Home()
+                .environmentObject(appState)
+        } else {
             Login()
-                .navigationDestination(for: Route.self) { route in
-                    switch route {
-                    case .home:
-                        Home()
-                    }
-                }
+                .environmentObject(appState)
         }
-        .environmentObject(appContext)
     }
 }
 

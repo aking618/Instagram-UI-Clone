@@ -1,5 +1,5 @@
 //
-//  AppContextViewModel.swift
+//  AppState.swift
 //  InstagramUIClone
 //
 //  Created by Ayren King on 7/10/23.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-class AppContextViewModel: ObservableObject {
+class AppState: ObservableObject {
+    @Published var loggedIn: Bool = false
     @Published var path = NavigationPath()
         
     func navigate(route: Route) {
