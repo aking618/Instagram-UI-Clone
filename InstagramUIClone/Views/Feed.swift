@@ -24,10 +24,7 @@ struct Feed: View {
                     HStack(spacing: 15) {
                         ForEach(posts, id: \.id) { post in
                             VStack {
-                                Image(post.imageURL)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .clipShape(Circle())
+                                ProfileImageView(imageURL: post.user.profilePicURL, size: 64)
                                 Text(post.user.displayName)
                                     .font(.caption)
                                     .lineLimit(1)

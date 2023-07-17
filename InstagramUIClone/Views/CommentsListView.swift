@@ -27,11 +27,7 @@ struct CommentsListView: View {
             
             List(post.comments, id: \.timestamp) { comment in
                 HStack {
-                    Image(comment.user.profilePicURL)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 48)
-                        .clipShape(Circle())
+                    ProfileImageView(imageURL: comment.user.profilePicURL, size: 48)
                     
                     VStack(alignment: .leading) {
                         HStack {
@@ -51,11 +47,7 @@ struct CommentsListView: View {
             .listStyle(.plain)
             
             HStack {
-                Image(appState.user.profilePicURL)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 48)
-                    .clipShape(Circle())
+                ProfileImageView(imageURL: appState.user.profilePicURL, size: 48)
                     
                 TextField("Add a comment for \(post.user.displayName)...", text: $text)
                     .padding()

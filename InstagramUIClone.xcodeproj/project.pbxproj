@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED450C982A64BFF500AF03C7 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED450C972A64BFF500AF03C7 /* ProfileImageView.swift */; };
 		EDDD94062A5CD30E004D14FB /* InstagramUICloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94052A5CD30E004D14FB /* InstagramUICloneApp.swift */; };
 		EDDD94082A5CD30E004D14FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94072A5CD30E004D14FB /* ContentView.swift */; };
 		EDDD940A2A5CD30F004D14FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDD94092A5CD30F004D14FB /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED450C972A64BFF500AF03C7 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		EDDD94022A5CD30E004D14FB /* InstagramUIClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramUIClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDD94052A5CD30E004D14FB /* InstagramUICloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUICloneApp.swift; sourceTree = "<group>"; };
 		EDDD94072A5CD30E004D14FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED450C962A64BFE600AF03C7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED450C972A64BFF500AF03C7 /* ProfileImageView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EDDD93F92A5CD30E004D14FB = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		EDDD94132A5CDD3A004D14FB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED450C962A64BFE600AF03C7 /* Common */,
 				EDDD94162A5CDD5F004D14FB /* Home.swift */,
 				EDDD94192A5CDD73004D14FB /* Feed.swift */,
 				EDDD941B2A5CDD7C004D14FB /* Login.swift */,
@@ -195,6 +206,7 @@
 				EDDD941C2A5CDD7C004D14FB /* Login.swift in Sources */,
 				EDDD941A2A5CDD73004D14FB /* Feed.swift in Sources */,
 				EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */,
+				ED450C982A64BFF500AF03C7 /* ProfileImageView.swift in Sources */,
 				EDDD94222A5F92E2004D14FB /* User.swift in Sources */,
 				EDDD941E2A5CE00D004D14FB /* AppState.swift in Sources */,
 				EDDD942A2A6437ED004D14FB /* CommentsListView.swift in Sources */,

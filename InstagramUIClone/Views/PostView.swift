@@ -14,11 +14,7 @@ struct PostView: View {
     var body: some View {
         VStack(spacing: 5) {
             HStack {
-                Image(post.user.profilePicURL)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 32)
-                    .clipShape(Circle())
+                ProfileImageView(imageURL: post.user.profilePicURL, size: 32)
 
                 Text(post.user.displayName)
                     .bold()
