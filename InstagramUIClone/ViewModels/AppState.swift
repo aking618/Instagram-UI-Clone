@@ -8,18 +8,11 @@
 import SwiftUI
 
 class AppState: ObservableObject {
-    @Published var loggedIn: Bool = false
-    @Published var path = NavigationPath()
-        
-    func navigate(route: Route) {
-        path.append(route)
-    }
-    
-    func pop() {
-        path.removeLast()
-    }
+    @Published var rootView: Route = .login
+    @Published var user: User = User(id: "abc", displayName: "AyrenKing", profilePicURL: "profileA")
 }
 
-enum Route: Hashable {
+enum Route {
+    case login
     case home
 }

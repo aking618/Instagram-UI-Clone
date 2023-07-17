@@ -9,15 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var appState = AppState()
-    
+
     var body: some View {
-        if appState.loggedIn {
-            Home()
-                .environmentObject(appState)
-        } else {
-            Login()
-                .environmentObject(appState)
+        Group {
+            switch appState.rootView {
+            case .login:
+                Login()
+                    .transition(.move(edge: .leading))
+                    .environmentObject(appState)
+            case .home:
+                Home()
+                    .transition(.move(edge: .trailing))
+                    .environmentObject(appState)
+            }
         }
+        .animation(.easeInOut, value: appState.rootView)
     }
 }
 

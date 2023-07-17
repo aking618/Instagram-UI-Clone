@@ -8,23 +8,22 @@
 import SwiftUI
 
 struct Home: View {
-
     var body: some View {
         TabView {
             Feed()
                 .tabItem { Image(systemName: "house") }
-            
+
             Text("Search")
-                .tabItem { Image(systemName: "magnifyingglass")}
-            
+                .tabItem { Image(systemName: "magnifyingglass") }
+
             Text("Reels")
                 .tabItem { Image(systemName: "play.square") }
-            
+
             Text("Shop")
-                .tabItem { Image(systemName: "bag")}
-            
+                .tabItem { Image(systemName: "bag") }
+
             Text("Profile")
-                .tabItem { Image(systemName: "person.crop.circle")}
+                .tabItem { Image(systemName: "person.crop.circle") }
         }
     }
 }

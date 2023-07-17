@@ -20,6 +20,7 @@
 		EDDD94242A5F92FA004D14FB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94232A5F92FA004D14FB /* Comment.swift */; };
 		EDDD94262A5F9341004D14FB /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94252A5F9341004D14FB /* JSONData.swift */; };
 		EDDD94282A5F9833004D14FB /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94272A5F9833004D14FB /* PostView.swift */; };
+		EDDD942A2A6437ED004D14FB /* CommentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDD94292A6437ED004D14FB /* CommentsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EDDD94232A5F92FA004D14FB /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		EDDD94252A5F9341004D14FB /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		EDDD94272A5F9833004D14FB /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		EDDD94292A6437ED004D14FB /* CommentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				EDDD94192A5CDD73004D14FB /* Feed.swift */,
 				EDDD941B2A5CDD7C004D14FB /* Login.swift */,
 				EDDD94272A5F9833004D14FB /* PostView.swift */,
+				EDDD94292A6437ED004D14FB /* CommentsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				EDDD94172A5CDD5F004D14FB /* Home.swift in Sources */,
 				EDDD94222A5F92E2004D14FB /* User.swift in Sources */,
 				EDDD941E2A5CE00D004D14FB /* AppState.swift in Sources */,
+				EDDD942A2A6437ED004D14FB /* CommentsListView.swift in Sources */,
 				EDDD94202A5F9286004D14FB /* Post.swift in Sources */,
 				EDDD94262A5F9341004D14FB /* JSONData.swift in Sources */,
 				EDDD94242A5F92FA004D14FB /* Comment.swift in Sources */,

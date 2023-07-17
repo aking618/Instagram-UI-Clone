@@ -9,37 +9,37 @@ import SwiftUI
 
 struct Login: View {
     @EnvironmentObject var appState: AppState
-    
+
     @State private var username: String = ""
     @State private var password: String = ""
-    
+
     var body: some View {
         VStack(spacing: 20) {
             Text("Instagram")
                 .font(.title)
                 .bold()
-            
+
             TextField("Username", text: $username)
                 .padding()
                 .background(Color.lightGray)
                 .cornerRadius(5)
-            
+
             SecureField("Password", text: $password)
                 .padding()
                 .background(Color.lightGray)
                 .cornerRadius(5)
-            
+
             Button {
                 guard !username.isEmpty, !password.isEmpty else {
                     return
                 }
-                
+
                 // validate that the user is real through an api call
                 print(username, password)
-                
+
                 // navigate to home
-                appState.loggedIn = true
-                
+                appState.rootView = .home
+
             } label: {
                 Text("Log in")
                     .font(.headline)
@@ -55,7 +55,7 @@ struct Login: View {
 }
 
 extension Color {
-    static let lightGray: Color = .init(red: 240/255, green: 240/255, blue: 240/255)
+    static let lightGray: Color = .init(red: 240 / 255, green: 240 / 255, blue: 240 / 255)
 }
 
 struct Login_Previews: PreviewProvider {
