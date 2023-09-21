@@ -20,4 +20,4 @@ If you want to follow along with the workshop, you can clone the `main` branch a
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
